@@ -29,7 +29,13 @@
 
 ### ファイル構成
 
-- `manifest.json` - Chrome拡張機能の設定ファイル
-- `content.js` - ページに注入されるスクリプト（メインロジック）
+- `manifest.json` - Chrome拡張機能の設定ファイル（Manifest V3）
+- `content.js` - 調整さんのページに注入されるスクリプト（メインロジック）
+  - 全員が◯の日付の検出
+  - 日付・時刻の解析
+  - GoogleカレンダーURLの生成
+  - エクスポートメニューの表示と操作
+- `styles.css` - エクスポートメニューとボタンのスタイル
 - `popup.html` / `popup.js` - 拡張機能のポップアップUI
-- `styles.css` - エクスポートボタンのスタイル
+- `icon16.png` / `icon48.png` / `icon128.png` - 拡張機能のアイコンファイル
+- `README.md` - このファイル
