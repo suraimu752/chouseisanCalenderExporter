@@ -1,0 +1,368 @@
+/* 調整さん Googleカレンダーエクスポーター スタイル */
+
+.chouseisan-calendar-export-container {
+  background-color: #f5f5f5;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 970px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chouseisan-export-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  margin: -10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.chouseisan-export-title-wrapper:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.chouseisan-export-title-wrapper.expanded {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.chouseisan-toggle-icon {
+  font-size: 12px;
+  color: #4CAF50;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.chouseisan-export-title {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  flex: 1;
+}
+
+.chouseisan-export-content {
+  margin-top: 15px;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chouseisan-export-description {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+}
+
+.chouseisan-event-name-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.chouseisan-event-name-label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.chouseisan-event-name-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.chouseisan-event-name-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.chouseisan-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.chouseisan-date-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.chouseisan-duration-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chouseisan-time-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.chouseisan-time-display select {
+  display: inline-block;
+}
+
+.chouseisan-date-label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 150px;
+}
+
+.chouseisan-date-item .chouseisan-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.chouseisan-select-wrapper::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+  font-size: 12px;
+}
+
+.chouseisan-duration-select {
+  padding: 8px 32px 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  width: auto;
+  min-width: auto;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+}
+
+.chouseisan-date-item .chouseisan-duration-select {
+  width: auto;
+  min-width: auto;
+}
+
+.chouseisan-duration-select:hover {
+  border-color: #4CAF50;
+}
+
+.chouseisan-duration-select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.chouseisan-bulk-setting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.chouseisan-bulk-setting .chouseisan-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.chouseisan-bulk-setting .chouseisan-select-wrapper::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+  font-size: 12px;
+}
+
+.chouseisan-bulk-setting .chouseisan-duration-select {
+  width: auto;
+  min-width: auto;
+}
+
+
+.chouseisan-bulk-label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chouseisan-apply-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chouseisan-apply-button:hover {
+  background-color: #1976D2;
+}
+
+.chouseisan-apply-button:active {
+  background-color: #1565C0;
+}
+
+.chouseisan-export-button,
+.chouseisan-export-all-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.chouseisan-export-button:hover,
+.chouseisan-export-all-button:hover {
+  background-color: #45a049;
+}
+
+.chouseisan-export-button:active,
+.chouseisan-export-all-button:active {
+  background-color: #3d8b40;
+}
+
+.chouseisan-export-all-button {
+  background-color: #2196F3;
+  margin-top: 10px;
+  width: auto;
+  min-width: fit-content;
+}
+
+.chouseisan-export-all-button:hover {
+  background-color: #1976D2;
+}
+
+.chouseisan-export-all-button:active {
+  background-color: #1565C0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .chouseisan-calendar-export-container {
+    padding: 15px;
+    margin: 15px auto;
+    width: 970px;
+  }
+
+  .chouseisan-export-title-wrapper {
+    padding: 8px;
+    margin: -8px;
+  }
+
+  .chouseisan-export-title {
+    font-size: 16px;
+  }
+
+  .chouseisan-toggle-icon {
+    font-size: 11px;
+  }
+
+  .chouseisan-export-button,
+  .chouseisan-export-all-button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .chouseisan-date-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chouseisan-date-label {
+    min-width: auto;
+  }
+
+  .chouseisan-event-name-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .chouseisan-event-name-label {
+    width: 100%;
+  }
+
+  .chouseisan-event-name-input {
+    width: 100%;
+  }
+
+  .chouseisan-duration-select {
+    width: 100%;
+  }
+
+  .chouseisan-bulk-setting {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chouseisan-bulk-label {
+    width: 100%;
+  }
+
+  .chouseisan-bulk-select {
+    width: 100%;
+  }
+
+  .chouseisan-duration-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chouseisan-apply-button {
+    width: 100%;
+  }
+}
+

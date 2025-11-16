@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>調整さん Googleカレンダーエクスポーター</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+
+    p {
+      font-size: 13px;
+      color: #666;
+      margin: 0 0 15px 0;
+      line-height: 1.5;
+    }
+
+    .status {
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #333;
+    }
+
+    .status.active {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>調整さん Googleカレンダーエクスポーター</h1>
+  <p>調整さんのイベントページで、全員が◯の日付をGoogleカレンダーにエクスポートできます。</p>
+  <div class="status" id="status">
+    調整さんのイベントページを開いてください
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

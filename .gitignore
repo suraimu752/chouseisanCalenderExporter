@@ -1,0 +1,15 @@
+# Chrome拡張機能のビルドファイル（必要に応じて）
+*.crx
+*.pem
+
+# エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS設定
+.DS_Store
+Thumbs.db
+
